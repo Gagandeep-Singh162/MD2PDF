@@ -1,0 +1,35 @@
+{
+  "name": "md2pdf",
+  "version": "1.0.0",
+  "description": "Convert Markdown notes to print-ready A4 PDFs, with real syntax highlighting for any code language, faithful ASCII diagram alignment, and Mermaid diagram rendering.",
+  "bin": {
+    "md2pdf": "bin/md2pdf.js"
+  },
+  "main": "bin/md2pdf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "markdown",
+    "pdf",
+    "cli",
+    "syntax-highlighting",
+    "mermaid",
+    "interview-prep"
+  ],
+  "author": "Gagandeep Singh",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "highlight.js": "^11.12.0",
+    "markdown-it": "^15.0.2",
+    "mermaid": "^12.0.0",
+    "puppeteer": "^25.10.0"
+  },
+  "allowScripts": {
+    "puppeteer@25.10.0": true
+  }
+}
