@@ -177,6 +177,11 @@ const html = `<!DOCTYPE html>
     font-size: 0.92em;
   }
 
+  /* Long unbreakable text (commands, paths, URLs) must wrap: anything wider
+     than the page makes Chrome shrink the whole document to fit it. */
+  :not(pre) > code { overflow-wrap: anywhere; }
+  p, li, td, th, blockquote { overflow-wrap: break-word; }
+
   pre.code-block {
     font-family: var(--mono-font);
     font-size: 9.5pt;
